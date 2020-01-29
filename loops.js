@@ -17,7 +17,7 @@ for(j=0; j<gals.length; j++){
     // the (while loop) it loops through a code whenever the condition is true
     var x=0;
     var txt="";
-    while(x<5){
+ while(x<5){
         txt += "<br>" + "Here is the number" + x;
         x++
     }
@@ -32,4 +32,11 @@ for(j=0; j<gals.length; j++){
 while(i<4);
 document.getElementById("vero2").innerHTML= txt2;
 
-    
+// break and continue in loops
+    var y=0;
+    var txt3 ="";
+    for(y=0; y<10; y++){
+    if(y===4){break;}
+     txt3 += "the no is" + y + "<br>";
+}
+    document.getElementById("vero4").innerHTML= txt3;
