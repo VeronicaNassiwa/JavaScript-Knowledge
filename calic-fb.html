@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>Document</title>
+</head>
+<body style="background-color:lightsteelblue;">
+    <center>
+        <style>
+            input[type=text]{
+                width: 305px;
+                margin: 20px;
+                font-size: 20px ;
+                padding: 10px;
+                text-align: right;
+            
+            }
+           input[type=button]{
+               width: 75px;
+               height: 50px;
+               margin: 2px;
+               padding: 10px;
+               cursor: pointer;
+               font-size: 25px;
+               font-weight: bold;
+               border-radius: 5px;
+           }
+        
+        </style>
+
+        <h2 style="color: red;"> YOUR CALCULATOR</h2>
+      
+            <p id="lbc"></p>
+            <div class="cal">
+    <form  name="caculator">
+        <input type="text" name="show"> <br> </br>
+        <input type="button" value="9" class="btn1" onclick="caculator.show.value += '9'">
+        <input type="button" value="8" class="btn1" onclick="caculator.show.value += '8'">
+        <input type="button" value="7" class="btn1" onclick="caculator.show.value += '7'">
+        <input type="button" value="x" class="btn1" onclick="caculator.show.value += '*'"> <br>
+
+        <input type="button" value="6" class="btn1" onclick="caculator.show.value += '6'"> 
+        <input type="button" value="5" class="btn1" onclick="caculator.show.value += '5'">
+        <input type="button" value="4" class="btn1" onclick="caculator.show.value += '4'">
+        <input type="button" value="-" class="btn1" onclick="caculator.show.value += '-'"><br>
+
+        <input type="button" value="3" class="btn1" onclick="caculator.show.value += '3'">
+        <input type="button" value="2" class="btn1" onclick="caculator.show.value += '2'">
+        <input type="button" value="1" class="btn1" onclick="caculator.show.value += '1'">
+        <input type="button" value="/" class="btn1" onclick="caculator.show.value += '/'"> <br>
+
+        <input type="button" value="0" class="btn1" onclick="caculator.show.value += '0'">
+        <input type="button" value="=" class="btn1" onclick="caculator.show.value =eval(caculator.show.value)"> 
+        <input type="button" value="C" class="btn1" onclick="caculator.show.value = ''" >
+        <input type="button" value="+" class="btn1" onclick="caculator.show.value += '+'">
+       
+
+    </form>
+</div>
+</center>
+</body>
+</html>
