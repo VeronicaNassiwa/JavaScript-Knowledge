@@ -76,7 +76,7 @@ class Player{
        return r;
  }            
              
-}
+} 
 //let p1= new Player('Vero');
     //console.log(fighter1.name);
     //console.log(p1.start());
