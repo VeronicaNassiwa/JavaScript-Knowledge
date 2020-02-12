@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="form.css">
+    <title>Forms</title>
+</head>
+<body style="text-align: center;" style="background-color: rgb(163, 184, 196);">
+   
+    <h2 style="color: red;">Emplyee RegForm</h2>
+    <form action="" name="RegForm" >
+        
+        
+        <p> Name:<input type="text" name="name" min="65"></p>
+        <p>Address:<input type="text" name="address" min="65"></p>
+        <p>Email: <input type="text" name="email" min="100"></p>
+        <p>Telephone: <input type="text" name="tel" min="65" ></p>
+        <p>Passcode:<input type="password" name="passcode" ></p>
+        <p> Department:<select name="departments" id="deps" type="text">
+            <option ></option>
+            <option>Information Technology</option>
+            <option>Marketing</option>
+            <option>Accounts</option>
+            <option >Human Resource</option>
+            <option>Transport</option>
+                     </select></p>
+        <h3>Comment:<textarea name="comments" id="comm" cols="20" rows="7" ></textarea></h3>
+<p>    <input type="button" value="clean" onclick="txtarea()" > 
+        <input type="button" value="Submit" onclick="return regform()" ></p>
+       
+    </form>
+    
+</body>
+</html>
