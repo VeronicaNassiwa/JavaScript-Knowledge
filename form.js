@@ -44,4 +44,13 @@ function regform(){
 function txtarea(){
     document.getElementById("comm").value=" ";
 }
-
+ function apis(){
+     var onj= new XMLHttpRequest;
+     onj.onreadystatechange=function (){
+         if(this.readyState==4 && this.status==200){
+             document.getElementById("vvv").innerHTML=this.responseText;
+         }
+     };
+     onj.open("POST","ajax_test.asp",true);
+     onj.send();
+ }
