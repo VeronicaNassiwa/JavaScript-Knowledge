@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="classes.css">
+    <script src="classes.js"></script>
+    <title>Classes</title>
+</head>
+<body style="background-color: rgb(229, 233, 229);">
+    <center>
+ <h2 style="color: rgb(15, 15, 15);">CLASSES AND  CONDITIONS</h2>  
+ <div style="color: red;" id="ttd">
+     <h1>SWORD BATTLE</h1>
+     <p style="color: black;">Press RESET to restart the game!! <br> Then keep on pressing the STARTBATTLE button until one player loss!
+
+     </p>
+     <p style="color: violet;" style="font-style: italic;">ENJOY!!</p>
+ </div>
+<input type="text" id="action" readonly="true" value="BattleAction"/>
+<div id="status">
+    <textarea id='p1' class="txt"></textarea>
+    <textarea id='p2' class="txt"></textarea>
+</div>
+<input type="button" id="binit" class="play" value="Reset" onclick="initGame()"/>
+<input type="button" id="bplay" class="play" value="StartBattle" onclick="startGame()"/>
+</center>
+</body>
+</html>
